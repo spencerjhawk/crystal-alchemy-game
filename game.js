@@ -50,57 +50,34 @@ function lose() {
 	restartGame();
 }
 
+//checks if current number is equal to target number
+
+function checkWin() {
+	$('#currentNumber').text(counter); 
+          
+        if (counter == targetNumber){
+          win();
+        }
+        else if (counter > targetNumber){
+          lose();
+        }   
+}
+
 //Adding crystal tally to current number
 
 $('#heart').on ('click', function(){
     counter = counter + heart;
-    
-    $('#currentNumber').text(counter); 
-          
-        if (counter == targetNumber){
-          win();
-        }
-        else if (counter > targetNumber){
-          lose();
-        }   
-  });  
+ }
 
 $('#star').on ('click', function(){
     counter = counter + star;
-    
-    $('#currentNumber').text(counter); 
-         
-        if (counter == targetNumber){
-          win();
-        }
-        else if (counter > targetNumber){
-          lose();
-        }   
-  });  
+ }  
 
 $('#droplet').on ('click', function(){
     counter = counter + droplet;
-    
-    $('#currentNumber').text(counter); 
-          
-        if (counter == targetNumber){
-          win();
-        }
-        else if (counter > targetNumber){
-          lose();
-        }   
-  });  
+ }  
 
 $('#flame').on ('click', function(){
     counter = counter + flame;
-    
-    $('#currentNumber').text(counter); 
-         
-        if (counter == targetNumber){
-          win();
-        }
-        else if (counter > targetNumber){
-          lose();
-        }   
-  });  
+}
 
