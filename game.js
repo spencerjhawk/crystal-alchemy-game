@@ -68,20 +68,20 @@ function checkWin() {
 $('#heart').on ('click', function(){
     counter = counter + heart;
     checkWin();
- }
+ })
 
 $('#star').on ('click', function(){
     counter = counter + star;
     checkWin();
- }  
+ })  
 
 $('#droplet').on ('click', function(){
     counter = counter + droplet;
     checkWin();
- }  
+ })  
 
 $('#flame').on ('click', function(){
     counter = counter + flame;
     checkWin();
-}
+})
 
