@@ -1,0 +1,36 @@
+.wrapper {
+	margin: 5%;
+}
+
+.jumbotron {
+	text-align: center;
+	color: gold;
+	font-size: 50%;
+}
+
+.panel-body {
+	padding: 20px;
+	text-align: center;
+}
+
+
+#heart {
+	color: red;
+}
+
+#star {
+	color: yellow;
+}
+
+#droplet {
+	color: blue;
+}
+
+#flame {
+	color: orange;
+}
+
+body {
+	background-image: url(https://i.ytimg.com/vi/yi-b39uzXXI/maxresdefault.jpg);
+}
+

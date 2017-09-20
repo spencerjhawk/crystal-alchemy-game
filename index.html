@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Alchemist Challenge</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="jumbotron">
+			<h1>The Alchemist Challenge</h1>	
+			<p>Do you know anything of alchemy? Well, let's see. Combine the element values to equal the Alchemy Digits.</p>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+			Alchemy Digits: <span id="targetNumber">0</span>
+			</div>
+
+			<div class="panel-body">
+			Current Number: <span id="currentNumber">0</span>
+			</div>
+
+			<div class="panel-body">
+			Wins: <span id="winCounter">0</span>
+			</div>
+	
+			<div class="panel-body">
+			Losses:  <span id="lossCounter">0</span>
+			</div>
+
+			<div class="panel panel-default"></div>
+				<div class="panel panel-body">
+					<button id ="heart" class="btn btn-default btn-lg first-crystal"><span class="glyphicon glyphicon-heart"></span> Heart</button>
+              		<button id="star" class="btn btn-default btn-lg second-crystal"><span class="glyphicon glyphicon-star"></span> Star</button>
+              		<button id="droplet" class="btn btn-default btn-lg third-crystal"><span class="glyphicon glyphicon-tint"></span> Droplet</button>
+              		<button id="flame" class="btn btn-default btn-lg fourth-crystal"><span class="glyphicon glyphicon-fire"></span> Flame</button>
+              		<button onclick="restartGame()" class="btn btn-default btn-lg replay"><span class="glyphicon glyphicon-repeat"></span> Restart</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
